@@ -1,0 +1,45 @@
+*{
+  padding: 0;
+  margin: 0;
+  
+}
+
+#game{
+  width: 500px;
+  height: 200px;
+  border: 1px solid black;
+  
+}
+#player{
+  width: 20px;
+  height: 50px;
+  background-color: red;
+  position: relative;
+  top: 150px;
+}
+
+.animation{
+ animation: jump 500ms;
+}
+
+@keyframes jump{
+  0%{top: 150px;}
+  30%{top: 100px;}
+  70%{top: 100px;}
+  100%{top: 150px;}
+}
+
+#bullet{
+  width: 20px;
+  height: 10px;
+  background-color: blue;
+  position: relative;
+  top: 140px;
+  left: 480px;
+  animation: fly 1s linear infinite;
+}
+
+@keyframes fly{
+  0%{left: 480px;}
+  100%{left: -480px;}
+}
