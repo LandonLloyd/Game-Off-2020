@@ -4,6 +4,13 @@
   
 }
 
+#gameOver{
+  background-color: white;
+  color: red;
+  margin: auto;
+  
+}
+
 #game{
   width: 500px;
   height: 200px;
@@ -33,11 +40,14 @@
   width: 20px;
   height: 10px;
   background-color: blue;
+  border-radius: 50%;
   position: relative;
   top: 140px;
   left: 480px;
   animation: fly 1s linear infinite;
 }
+
+
 
 @keyframes fly{
   0%{left: 480px;}
