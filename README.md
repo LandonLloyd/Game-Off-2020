@@ -2,4 +2,4 @@
 My attempt at the Game Off 2020 game jam hosted by GitHub and Lee Reilly. All my code for the jam will be hosted here!
 
 # Live Version
-[View the Live Game Here!](https://landonlloyd.github.io/Game-Off-2020/)
+[View the Live Game Here! It is still in BETA version and will be updated frequently!](https://landonlloyd.github.io/Game-Off-2020/)
