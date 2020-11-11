@@ -6,7 +6,7 @@ let score = 0;
 let random = Math.floor(Math.random() * 140);
 
 document.addEventListener('keydown', event => {
-  if(event.key === "ArrowUp" || event.keycode === 32){
+  if(event.key === "ArrowUp" || event.keyCode === 32){
     player.style.height = 50 + "px";
     player.style.top = 150 + "px";
     
@@ -39,4 +39,3 @@ let checkDead = setInterval(function(){
    }
    
 }, 10);
-
