@@ -6,7 +6,7 @@ let score = 0;
 let random = Math.floor(Math.random() * 140);
 
 document.addEventListener('keydown', event => {
-  if(event.key === "ArrowUp"){
+  if(event.key === "ArrowUp" || event.keycode === 32){
     player.style.height = 50 + "px";
     player.style.top = 150 + "px";
     
@@ -33,9 +33,7 @@ let checkDead = setInterval(function(){
      bullet.style.animation = "none";
      bullet.style.display = "none";
      gameOver.innerText = "You lose! :( You Jumped over " + Math.floor(score/100) + " rocks!";
-     
-     score = score;
-   }else{
+   }else if(bullet.style.display != "none"){
      score++;
      number.innerText = Math.floor(score / 100);
    }
