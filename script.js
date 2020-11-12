@@ -18,14 +18,8 @@ let score = 0;
 
 let random = Math.floor(Math.random() * 140);
 
-window.onload = bullet.classList.remove('fly');
-window.onload = bullet.style.display = 'none';
-
   function startGame(){
-  bullet.classList.add('fly');
-  bullet.style.display = 'initial';
-  gameOver.innerText = '';
-  score = 0;
+    document.location.reload();
   }
   
   document.addEventListener('keydown', event => {
@@ -49,28 +43,6 @@ window.onload = bullet.style.display = 'none';
     }
     });
 
-  /*document.addEventListener('keydown', event => {
-    if(event.key === "ArrowUp" || event.keyCode === 32){
-      player.style.height = 50 + "px";
-      player.style.top = 150 + "px";
-      
-      if(player.classList != "animation"){
-        player.classList.add("animation");
-      }
-      player.classList.add("animation");
-      setTimeout(function(){
-        player.classList.remove("animation");
-      }, 500);
-    }
-    
-    if(event.key === "ArrowDown"){
-      player.classList != "animation";
-      player.style.height = 25 + "px";
-      player.style.top = 175 + "px";
-    }
-    });*/
-
-
 let checkDead = setInterval(function(){
   
    let playerTop = parseInt(window.getComputedStyle(player).getPropertyValue("top"));
@@ -92,5 +64,4 @@ let checkDead = setInterval(function(){
 
 bullet.style.backgroundColor = colors[i];
 player.style.backgroundColor = colors[i];
-
-//CHANGE THE EYE COLOR RANDOMLY SO IT APPEARS IF PLAYER BODY IS BLACK
+gameOver.style.color = colors[i];
