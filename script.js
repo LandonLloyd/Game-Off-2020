@@ -1,6 +1,7 @@
 let gameOver = document.getElementById('gameOver');
 let player = document.getElementById('player');
 let bullet = document.getElementById('bullet');
+let eyes = document.getElementById('eyes');
 let colors = ['green', 'blue', 'red', 'orange', 'black'];
 let i = Math.floor(Math.random() * colors.length);
 let number = document.getElementById('number');
@@ -41,6 +42,11 @@ let checkDead = setInterval(function(){
    }
    
 }, 10);
+if(i === 'black'){
+  eyes.style.backgroundColor === 'red';
+}
 
 bullet.style.backgroundColor = colors[i];
+player.style.backgroundColor = colors[i];
 
+//CHANGE THE EYE COLOR RANDOMLY SO IT APPEARS IF PLAYER BODY IS BLACK
