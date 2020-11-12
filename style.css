@@ -7,7 +7,6 @@
 #gameOver{
   background-color: white;
   color: red;
-  margin: auto;
   
 }
 
@@ -15,15 +14,25 @@
   width: 500px;
   height: 200px;
   border: 1px solid black;
-  
 }
+  
 #player{
   width: 20px;
   height: 50px;
   background-color: red;
   position: relative;
   top: 150px;
+  border-radius: 25%;
 }
+
+#eyes{
+  width: 20px;
+  height: 10px;
+  background-color: black;
+  position: relative;
+  border-radius: 25% 25% 0 0;
+}
+
 
 .animation{
  animation: jump 500ms;
@@ -39,12 +48,20 @@
 #bullet{
   width: 20px;
   height: 10px;
-  background-color: blue;
+  background-color: black;
   border-radius: 50%;
   position: relative;
   top: 140px;
   left: 480px;
   animation: fly 1s linear infinite;
+}
+
+#tip{
+  width: 10px;
+  height: 10px;
+  background-color: gold;
+  border-radius: 50%;
+  position: relative;
 }
 
 
