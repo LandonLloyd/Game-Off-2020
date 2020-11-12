@@ -6,3 +6,6 @@ My attempt at the Game Off 2020 game jam hosted by GitHub and Lee Reilly. All my
 
 ## Instructions
 The instructions for the game are quite simple: Don't get hit by the blue bullet. You are acting as the red character and have to jump over the bullet using the UP arrow or the Spacebar to do so. 
+
+# Contributing
+I would gladly accept pull requests from anyone! I would really appreciate it actually! If you would like to contribute please read the CONTRIBUTING.md file first. I would also love to get some feature requests for the game. Just open up a GitHub issue and I will take a look at it! Thanks!
