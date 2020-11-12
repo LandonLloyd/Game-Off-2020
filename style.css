@@ -53,7 +53,6 @@
   position: relative;
   top: 140px;
   left: 480px;
-  animation: fly 1s linear infinite;
 }
 
 #tip{
@@ -69,4 +68,8 @@
 @keyframes fly{
   0%{left: 480px;}
   100%{left: -480px;}
+}
+
+.fly{
+  animation: fly 1s linear infinite;
 }
