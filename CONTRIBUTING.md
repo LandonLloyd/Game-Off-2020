@@ -14,3 +14,6 @@ Once you are on a new branch of your copied repository make some changes or addi
 Once you have made the changes you want to see, submit a pull request onto my repository. When making the pull request your branch should be on the left with an arrow pointing back onto my original repository. My repository <---- Your repository/branch. Once you have submitted the Pull Request I will review it and if I like it I will merge it with the original repository!
 
 ### Thanks again for contributing and helping out! I really appreciate it!
+
+## Create an issue
+This has nothing to do with the stuff above. If you would like to request a feature, report a bug, etc. Create an issue. You can do this by clicking issues in the top left corner of the screen under the repository name. These would also be very helpful and encouraged. Thanks!
