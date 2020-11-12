@@ -1,6 +1,8 @@
 let gameOver = document.getElementById('gameOver');
 let player = document.getElementById('player');
 let bullet = document.getElementById('bullet');
+let colors = ['green', 'blue', 'red', 'orange', 'black'];
+let i = Math.floor(Math.random() * colors.length);
 let number = document.getElementById('number');
 let score = 0;
 let random = Math.floor(Math.random() * 140);
@@ -39,3 +41,6 @@ let checkDead = setInterval(function(){
    }
    
 }, 10);
+
+bullet.style.backgroundColor = colors[i];
+
