@@ -33,7 +33,6 @@
   border-radius: 25% 25% 0 0;
 }
 
-
 .animation{
  animation: jump 500ms;
 }
@@ -70,4 +69,3 @@
   0%{left: 480px;}
   100%{left: -480px;}
 }
-
