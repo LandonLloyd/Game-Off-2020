@@ -8,7 +8,9 @@ let eyes = document.getElementById('eyes');
 
 let start = document.getElementById('startGame');
 
-let colors = ['green', 'blue', 'red', 'orange', 'pink', 'cyan'];
+let board = document.getElementById('leaderboard');
+
+let colors = ['green', 'blue', 'red', 'orange', 'pink', 'cyan', 'gray', 'lime'];
 
 let i = Math.floor(Math.random() * colors.length);
 
@@ -52,7 +54,12 @@ let checkDead = setInterval(function(){
    if(bulletLeft < 20 && bulletLeft > 0 && playerTop >= 130){
      bullet.style.animation = "none";
      bullet.style.display = "none";
+     player.style.animation = "none";
      gameOver.innerText = "You lose! :( You Jumped over " + Math.floor(score/100) + " rocks!";
+     if(localStorage.getItem("Score") < score){
+       localStorage.setItem("Name", prompt('You have the highscore on this machine with a score of ' + Math.floor(score / 100) + '. Please enter your name so you can be named the All Time Best!'));
+       localStorage.setItem("Score", Math.floor(score/100));
+     }
    }else if(bullet.style.display != "none"){
      score++;
      number.innerText = Math.floor(score / 100);
@@ -62,6 +69,7 @@ let checkDead = setInterval(function(){
 }, 10);
 
 
+board.innerText = "All Time Best: " + localStorage.getItem("Name") + " With " + localStorage.getItem("Score");
 bullet.style.backgroundColor = colors[i];
 player.style.backgroundColor = colors[i];
 gameOver.style.color = colors[i];
