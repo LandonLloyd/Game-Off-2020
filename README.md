@@ -11,4 +11,4 @@ The instructions for the game are quite simple: Don't get hit by the bullet that
 I will gladly accept pull requests from anyone! I would really appreciate it actually! If you would like to contribute please read the [CONTRIBUTING.md file](https://github.com/LandonLloyd/Game-Off-2020/blob/main/CONTRIBUTING.md) first. I would also love some feature requests for the game. Just open up a GitHub issue and I will take a look at it! Thanks!
 
 # Latest Update
-The latest feature added to the game is the addition of a `Start Game` Button.
+Add an All Time Best feature. This is still in the works as I am still working with Local Storage to get this working.
