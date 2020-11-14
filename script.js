@@ -21,10 +21,10 @@ let colors = [
     'lime',
     'olive',
     'coral',
-    'slategray'
-    'amazon'
-    'amber'
-    'acid green',
+    'slategray',
+    'amazon',
+    'amber',
+    'acid green'
 ]
 
 let i = Math.floor(Math.random() * colors.length)
