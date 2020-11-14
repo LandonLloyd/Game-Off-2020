@@ -69,3 +69,18 @@
   0%{left: 480px;}
   100%{left: -480px;}
 }
+
+#jump{
+  height: 75px;
+  width: 75px;
+}
+
+#crouch{
+  height: 75px;
+  width: 75px;
+}
+
+#startGame{
+  height: 50px;
+  width: 50px;
+}
