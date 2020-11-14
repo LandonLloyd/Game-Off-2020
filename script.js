@@ -89,7 +89,7 @@ let checkDead = setInterval(function () {
             'You lose! :( You Jumped over ' +
             Math.floor(score / 100) +
             ' rocks!';
-        if (score > Number(localStorage.getItem("Score"))) {
+        if (Math.floor(score / 100) > Number(localStorage.getItem("Score"))) {
             localStorage.setItem(
                 'Name',
                 prompt(
