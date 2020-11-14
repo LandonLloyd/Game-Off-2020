@@ -4,7 +4,7 @@ My attempt at the Game Off 2020 game jam hosted by GitHub and Lee Reilly. All my
 # Live Version
 [View the Live Game Here! It is still in BETA version and will be updated frequently!](https://landonlloyd.github.io/Game-Off-2020/)
 
-# Instructions
+# [Instructions](https://landonlloyd.github.io/Game-Off-2020/Instructions/index.html)
 The instructions for the game are quite simple: Don't get hit by the bullet that comes your way. You are acting as the randomly colored character on the left of the screen and you have to jump over the bullet using the UP arrow or the Spacebar to do so. 
 
 # Contributing
