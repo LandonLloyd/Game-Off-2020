@@ -16,7 +16,7 @@ Latest Update: Add high score for the session using `sessionStorage`.
 # Contributors
 Thank You to everyone that has contributed and helped out with this project! You have helped out a ton!
 
-[LandonLloyd]()https://github.com/LandonLloyd)
+[LandonLloyd](https://github.com/LandonLloyd)
 
 [clay099](https://github.com/clay099)
 
