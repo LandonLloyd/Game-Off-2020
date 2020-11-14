@@ -12,3 +12,9 @@ I will gladly accept pull requests from anyone! I would really appreciate it act
 
 # Latest Update
 Latest Update: All time best feature. This works per device and will be stored in the local storage of your device. Pull Request by - @nhcarrigan
+
+# Contributors
+Thank You to everyone that has contributed and helped out with this project! You have helped out a ton!
+[clay099](https://github.com/clay099)
+[Davis](https://github.com/dlloyd10)
+[nhcarrigan](https://github.com/nhcarrigan)
