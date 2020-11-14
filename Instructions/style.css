@@ -25,3 +25,17 @@ li{
   border: 1px solid black;
   padding: 0.5em;
 }
+
+#footer{
+  text-align: center;
+  font-size: 3em;
+  padding: 1em;
+}
+
+#btg{
+  text-decoration: none;
+}
+
+#btg:hover{
+  text-decoration: underline;
+}
