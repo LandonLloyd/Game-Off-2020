@@ -10,6 +10,8 @@ let start = document.getElementById('startGame');
 
 let board = document.getElementById('leaderboard');
 
+let session = document.getElementById('sessionBoard');
+
 
 let colors = [
     'green',
@@ -101,6 +103,17 @@ let checkDead = setInterval(function () {
             );
             localStorage.setItem("Score", Math.floor(score / 100));
         }
+        if(Math.floor(score / 100) > sessionStorage.getItem("Score")){
+           sessionStorage.setItem(
+             "Name",
+            prompt(
+                "You have the highscore for THIS SESSION of play with a score of " +
+                Math.floor(score / 100) +
+                ". Please Enter your name to be given the title - Best This Session!"
+            )
+          );
+          sessionStorage.setItem("Score", Math.floor(score / 100));
+        }
     } else if (bullet.style.display != 'none') {
         score++;
         number.innerText = Math.floor(score / 100);
@@ -110,9 +123,16 @@ let checkDead = setInterval(function () {
 board.innerText =
     'All Time Best: ' +
     localStorage.getItem('Name') +
-    ' With ' +
+    ' with a score of ' +
     localStorage.getItem('Score');
+    
+sessionBoard.innerText =
+    'Best This Session: ' +
+    sessionStorage.getItem("Name") +
+    " with a score of " +
+    sessionStorage.getItem("Score");
+       
+    
 bullet.style.backgroundColor = colors[i];
 player.style.backgroundColor = colors[i + 1 || 0];
 gameOver.style.color = colors[i];
-console.log(localStorage.getItem("Score"));
