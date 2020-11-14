@@ -1,17 +1,20 @@
-let gameOver = document.getElementById('gameOver');
+let gameOver = document.getElementById("gameOver");
 
-let player = document.getElementById('player');
+let player = document.getElementById("player");
 
-let bullet = document.getElementById('bullet');
+let bullet = document.getElementById("bullet");
 
-let eyes = document.getElementById('eyes');
+let eyes = document.getElementById("eyes");
 
-let start = document.getElementById('startGame');
+let start = document.getElementById("startGame");
 
-let board = document.getElementById('leaderboard');
+let board = document.getElementById("leaderboard");
 
-let session = document.getElementById('sessionBoard');
+let session = document.getElementById("sessionBoard");
 
+let mobileJump = document.getElementById("jump");
+
+let mobileCrouch = document.getElementById("crouch");
 
 let colors = [
     'green',
@@ -43,7 +46,7 @@ let colors = [
 
 let i = Math.floor(Math.random() * colors.length);
 
-let number = document.getElementById('number');
+let number = document.getElementById("number");
 
 let score = 0;
 
@@ -53,24 +56,42 @@ function startGame() {
     document.location.reload();
 }
 
-document.addEventListener('keydown', (event) => {
-    if (event.key === 'ArrowUp' || event.keyCode === 32) {
-        player.style.height = 50 + 'px';
-        player.style.top = 150 + 'px';
+mobileJump.addEventListener("click", function(){
+  player.style.height = 50 + "px";
+  player.style.top = 150 + "px";
+  if(player.classList != "animation"){
+    player.classList.add("animation");
+  }
+  player.classList.add("animation");
+  setTimeout(function(){
+    player.classList.remove("animation");
+  }, 500);
+});
+
+mobileCrouch.addEventListener("click", function(){
+  player.classList != "animation";
+  player.style.height = 25 + "px";
+  player.style.top = 175 + "px";
+});
+
+document.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowUp" || event.keyCode === 32) {
+        player.style.height = 50 + "px";
+        player.style.top = 150 + "px";
         
-        if (player.classList != 'animation') {
-            player.classList.add('animation');
+        if (player.classList != "animation") {
+            player.classList.add("animation");
         }
-        player.classList.add('animation');
+        player.classList.add("animation");
         setTimeout(function () {
-            player.classList.remove('animation');
+            player.classList.remove("animation");
         }, 500);
     }
 
-    if (event.key === 'ArrowDown') {
-        player.classList != 'animation';
-        player.style.height = 25 + 'px';
-        player.style.top = 175 + 'px';
+    if (event.key === "ArrowDown") {
+        player.classList != "animation";
+        player.style.height = 25 + "px";
+        player.style.top = 175 + "px";
     }
 });
 
@@ -88,9 +109,9 @@ let checkDead = setInterval(function () {
         bullet.style.display = 'none';
         player.style.animation = 'none';
         gameOver.innerText =
-            'You lose! :( You Jumped over ' +
+            'You lose! :( You dodged ' +
             Math.floor(score / 100) +
-            ' rocks!';
+            ' bullets!';
         if (Math.floor(score / 100) > Number(localStorage.getItem("Score"))) {
             localStorage.setItem(
                 'Name',
