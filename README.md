@@ -11,10 +11,12 @@ The instructions for the game are quite simple: Don't get hit by the bullet that
 I will gladly accept pull requests from anyone! I would really appreciate it actually! If you would like to contribute please read the [CONTRIBUTING.md file](https://github.com/LandonLloyd/Game-Off-2020/blob/main/CONTRIBUTING.md) first. I would also love some feature requests for the game. Just open up a GitHub issue and I will take a look at it! Thanks!
 
 # Latest Update
-Latest Update: All time best feature. This works per device and will be stored in the local storage of your device. Pull Request by - @nhcarrigan
+Latest Update: Add high score for the session using `sessionStorage`.
 
 # Contributors
 Thank You to everyone that has contributed and helped out with this project! You have helped out a ton!
+
+[LandonLloyd]()https://github.com/LandonLloyd)
 
 [clay099](https://github.com/clay099)
 
