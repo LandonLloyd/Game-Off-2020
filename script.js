@@ -50,17 +50,19 @@ let number = document.getElementById("number");
 
 let score = 0;
 
-function startGame() {
-    document.location.reload();
-}
+let random = Math.floor(Math.random() * 140);
 
-if(window.onload && sessionStorage.getItem("Name") === null || sessionStorage.getItem("Score") === null){
+if(sessionStorage.getItem("Name") === null || sessionStorage.getItem("Score") === null){
   sessionStorage.setItem("Name", "Anonymous");
   sessionStorage.setItem("Score", 0);
 }
-if(window.onload && localStorage.getItem("Name") === null || localStorage.getItem("Score") === null){
+if(localStorage.getItem("Name") === null || localStorage.getItem("Score") === null){
   localStorage.setItem("Name", "Anonymous");
   localStorage.setItem("Score", 0);
+}
+
+function startGame() {
+    document.location.reload();
 }
 
 mobileJump.addEventListener("click", function(){
@@ -111,7 +113,7 @@ let checkDead = setInterval(function () {
         window.getComputedStyle(bullet).getPropertyValue('left')
     );
 
-    if (bulletLeft < 20 && bulletLeft > 0 && playerTop >= 130 || bulletLeft) {
+    if (bulletLeft < 20 && bulletLeft > 0 && playerTop >= 130) {
         bullet.style.animation = 'none';
         bullet.style.display = 'none';
         player.style.animation = 'none';
@@ -119,7 +121,7 @@ let checkDead = setInterval(function () {
             'You lose! :( You dodged ' +
             Math.floor(score / 100) +
             ' bullets!';
-        if (Math.floor(score / 100) > localStorage.getItem("Score")) {
+        if (Math.floor(score / 100) > Number(localStorage.getItem("Score"))) {
             localStorage.setItem(
                 'Name',
                 prompt(
@@ -148,13 +150,6 @@ let checkDead = setInterval(function () {
     }
 }, 10);
 
-
-  /*setInterval(function(){
-      let random = Math.floor(Math.random() * player.height);
-      bullet.style.top = random + "px";
-  }, 1000);*/
-  
-
 board.innerText =
     'All Time Best: ' +
     localStorage.getItem('Name') +
@@ -167,6 +162,7 @@ sessionBoard.innerText =
     " with a score of " +
     sessionStorage.getItem("Score");
        
+    
 bullet.style.backgroundColor = colors[i];
 player.style.backgroundColor = colors[i + 1 || 0];
 gameOver.style.color = colors[i];
