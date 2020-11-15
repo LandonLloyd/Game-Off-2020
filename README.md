@@ -23,3 +23,5 @@ Thank You to everyone that has contributed and helped out with this project! You
 [Davis](https://github.com/dlloyd10)
 
 [nhcarrigan](https://github.com/nhcarrigan)
+
+[Abdelilah-Majid](https://github.com/Abdelilah-Majid)
