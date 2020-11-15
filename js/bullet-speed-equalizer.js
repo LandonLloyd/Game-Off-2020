@@ -23,7 +23,7 @@ let am_animate_bullet = function () {
   } else {
     bullet_animation_done();
   }
-  if (am_checkDead_timer > 6) {
+  if (am_checkDead_timer > 15) {
     am_checkDead_timer -= 0.01;
     // console.log(am_checkDead_timer);
   }

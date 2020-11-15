@@ -66,7 +66,7 @@ let checkDead = function () {
     }
   } else if (bullet.style.display != "none") {
     // score++;
-    number.innerText = Math.floor(score / 100);
+    number.innerText = Math.floor(score / 15);
   }
   setTimeout(checkDead, 100);
 };
