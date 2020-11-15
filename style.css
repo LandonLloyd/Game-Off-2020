@@ -50,7 +50,6 @@
   background-color: black;
   border-radius: 50%;
   position: relative;
-  top: 140px;
   left: 480px;
   animation: fly 1s linear infinite;
 }
