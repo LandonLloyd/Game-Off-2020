@@ -2,10 +2,11 @@
 let am_start = performance.now();
 let am_bulAnDone = false;
 let am_bullet_left = 480;
+let score_is_added = false;
 function bullet_animation_done() {
   if (!am_game_over) {
     let am_end = performance.now();
-    // console.log(`time:`, am_end - am_start);
+    console.log(`time:`, am_end - am_start);
     am_bullet_left = 480;
     bullet.style.cssText = "left: " + am_bullet_left + "px";
     am_bulAnDone = true;
@@ -27,8 +28,12 @@ let am_animate_bullet = function () {
     am_checkDead_timer -= 0.01;
     // console.log(am_checkDead_timer);
   }
-  if (am_bullet_left === 0) {
+  if (am_bullet_left === 0 && !score_is_added) {
     score += 100;
+    score_is_added = true;
+  }
+  if (am_bullet_left === -10) {
+    score_is_added = false;
   }
   if (!am_game_over) {
     setTimeout(am_animate_bullet, am_checkDead_timer / 5);

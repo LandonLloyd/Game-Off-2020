@@ -66,11 +66,11 @@ let checkDead = function () {
     }
   } else if (bullet.style.display != "none") {
     // score++;
-    number.innerText = Math.floor(score / 15);
+    number.innerText = Math.floor(score / 100);
   }
-  setTimeout(checkDead, 100);
+  setTimeout(checkDead, 10);
 };
-setTimeout(checkDead, am_checkDead_timer);
+setTimeout(checkDead, 10);
 board.innerText = "All Time Best: " + localStorage.getItem("Name") + " With " + localStorage.getItem("Score");
 bullet.style.backgroundColor = colors[i];
 player.style.backgroundColor = colors[i + 1 || 0];
