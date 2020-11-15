@@ -7,6 +7,7 @@ function bullet_animation_done() {
   if (!am_game_over) {
     let am_end = performance.now();
     console.log(`time:`, am_end - am_start);
+    am_start = am_end;
     am_bullet_left = 480;
     bullet.style.cssText = "left: " + am_bullet_left + "px";
     am_bulAnDone = true;
