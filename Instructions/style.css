@@ -1,14 +1,16 @@
 *{
   padding: 0;
   margin: 0;
-  background: purple;
+  background: url(https://sm.mashable.com/mashable_in/photo/default/nasa-galaxy_9pu4.jpg);
   color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .title{
   font-size: 5em;
   text-align: center;
-  border-bottom: black 1px solid;
+  border-bottom: white 1px solid;
   padding-bottom: 0.5em;
   padding-top: 0.5em;
   
@@ -22,7 +24,7 @@
 
 li{
   font-size: 2em;
-  border: 1px solid black;
+  border: white 1px solid;
   padding: 0.5em;
 }
 

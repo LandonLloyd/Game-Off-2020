@@ -1,7 +1,13 @@
 *{
   padding: 0;
   margin: 0;
-  
+}
+
+body{
+  background: url(https://sm.mashable.com/mashable_in/photo/default/nasa-galaxy_9pu4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
 }
 
 #gameOver{
@@ -14,13 +20,14 @@
   width: 500px;
   height: 200px;
   border: 1px solid black;
+  background: white;
 }
   
 #player{
   width: 20px;
   height: 50px;
   background-color: red;
-  position: relative;
+  position: absolute;
   top: 150px;
   border-radius: 25%;
 }
@@ -29,7 +36,7 @@
   width: 20px;
   height: 10px;
   background-color: black;
-  position: relative;
+  position: absolute;
   border-radius: 25% 25% 0 0;
 }
 
@@ -39,8 +46,8 @@
 
 @keyframes jump{
   0%{top: 150px;}
-  30%{top: 100px;}
-  70%{top: 100px;}
+  30%{top: 110px;}
+  70%{top: 110px;}
   100%{top: 150px;}
 }
 
@@ -49,8 +56,7 @@
   height: 10px;
   background-color: black;
   border-radius: 50%;
-  position: relative;
-  top: 140px;
+  position: absolute;
   left: 480px;
   animation: fly 1s linear infinite;
 }
@@ -70,18 +76,49 @@
   100%{left: -480px;}
 }
 
+#mobile-btns{
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+}
 
 #jump{
   height: 75px;
   width: 75px;
+  background: purple;
+  color: white;
 }
 
 #crouch{
   height: 75px;
   width: 75px;
+  background: purple;
+  color: white;
 }
 
 #startGame{
-  height: 50px;
-  width: 50px;
+  height: 75px;
+  width: 75px;
+  background: purple;
+  color: white;
+}
+
+#ctrl{
+  font-size: 4.5rem;
+  letter-spacing: 0.5em;
+}
+
+#instructions{
+  font-size: 5em;
+  text-align: center;
+}
+
+#instructions:hover{
+  font-size: 5.3em;
+  text-decoration: underline;
+}
+
+#link{
+  color: white;
+  text-decoration: none;
 }
