@@ -11,7 +11,7 @@ The instructions for the game are quite simple: Don't get hit by the bullet that
 I will gladly accept pull requests from anyone! I would really appreciate it actually! If you would like to contribute please read the [CONTRIBUTING.md file](https://github.com/LandonLloyd/Game-Off-2020/blob/main/CONTRIBUTING.md) first. I would also love some feature requests for the game. Just open up a GitHub issue and I will take a look at it! Thanks!
 
 # Latest Update
-Latest Update: Add buttons to make jumping and crouching an option for mobile players.
+Latest Update: Add hit detection, crouchability(improvement), some space themed styling. 
 
 # Contributors
 Thank You to everyone that has contributed and helped out with this project! You have helped out a ton!
