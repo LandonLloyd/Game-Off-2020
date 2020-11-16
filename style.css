@@ -6,7 +6,7 @@
 body{
   background: url(https://sm.mashable.com/mashable_in/photo/default/nasa-galaxy_9pu4.jpg);
   background-size: cover;
-  repeat: no-repeat;
+  background-repeat: no-repeat;
   color: white;
 }
 
