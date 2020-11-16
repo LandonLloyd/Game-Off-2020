@@ -68,7 +68,10 @@ if (
 }
 
 function startGame() {
-    document.location.reload();
+    //setInterval(function(){
+      window.location.reload();
+      //bullet.style.display = "initial";
+    //}, 3000);
 }
 
 mobileJump.addEventListener("click", function () {
@@ -188,7 +191,7 @@ function moveBullet() {
 }
 
 moveBullet();
-const bulletInterval = setInterval(() => moveBullet(), 1000);
+const bulletInterval = setInterval(() => moveBullet(), 1280);
 
 bullet.style.backgroundColor = colors[i];
 player.style.backgroundColor = colors[i + 1 || 0];
