@@ -20,7 +20,7 @@
   width: 20px;
   height: 50px;
   background-color: red;
-  position: relative;
+  position: absolute;
   top: 150px;
   border-radius: 25%;
 }
@@ -29,7 +29,7 @@
   width: 20px;
   height: 10px;
   background-color: black;
-  position: relative;
+  position: absolute;
   border-radius: 25% 25% 0 0;
 }
 
@@ -49,7 +49,7 @@
   height: 10px;
   background-color: black;
   border-radius: 50%;
-  position: relative;
+  position: absolute;
   left: 480px;
   animation: fly 1s linear infinite;
 }

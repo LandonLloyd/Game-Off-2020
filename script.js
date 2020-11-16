@@ -107,6 +107,10 @@ document.addEventListener("keydown", (event) => {
         player.classList != "animation";
         player.style.height = 25 + "px";
         player.style.top = 175 + "px";
+        setTimeout(function () {
+            player.style.height = 50 + "px";
+            player.style.top = 150 + "px";
+        }, 500);
     }
 });
 
@@ -115,11 +119,24 @@ let checkDead = setInterval(function () {
         window.getComputedStyle(player).getPropertyValue("top")
     );
 
+    let playerHeight = parseInt(
+        window.getComputedStyle(player).getPropertyValue("height")
+    );
+
     let bulletLeft = parseInt(
         window.getComputedStyle(bullet).getPropertyValue("left")
     );
 
-    if (bulletLeft < 20 && bulletLeft > 0 && playerTop >= 130) {
+    let bulletTop = parseInt(
+        window.getComputedStyle(bullet).getPropertyValue("top")
+    );
+    console.log({ playerTop, playerHeight, bulletLeft, bulletTop });
+    if (
+        bulletLeft < 20 &&
+        bulletLeft > 0 &&
+        playerTop + playerHeight > bulletTop &&
+        playerTop < bulletTop
+    ) {
         clearInterval(bulletInterval);
         bullet.style.animation = "none";
         bullet.style.display = "none";
@@ -167,12 +184,7 @@ sessionBoard.innerText =
     sessionStorage.getItem("Score");
 
 function moveBullet() {
-    let randomHeight =
-        Math.floor(
-            Math.random() * Number(player.style.height.replace(/px/g, ""))
-        ) *
-            -1 +
-        140;
+    let randomHeight = Math.floor(Math.random() * 50) + 150;
     bullet.style.top = randomHeight + "px";
 }
 
