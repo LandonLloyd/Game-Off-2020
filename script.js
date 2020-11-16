@@ -130,7 +130,6 @@ let checkDead = setInterval(function () {
     let bulletTop = parseInt(
         window.getComputedStyle(bullet).getPropertyValue("top")
     );
-    console.log({ playerTop, playerHeight, bulletLeft, bulletTop });
     if (
         bulletLeft < 20 &&
         bulletLeft > 0 &&
