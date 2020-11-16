@@ -93,7 +93,7 @@ document.addEventListener("keydown", (event) => {
     if (event.key === "ArrowUp" || event.keyCode === 32) {
         player.style.height = 50 + "px";
         player.style.top = 150 + "px";
-        bullet.style.top = 140 + "px";
+        bullet.style.top = 190 + "px";
         if (player.classList != "animation") {
             player.classList.add("animation");
         }
@@ -107,7 +107,7 @@ document.addEventListener("keydown", (event) => {
         player.classList != "animation";
         player.style.height = 25 + "px";
         player.style.top = 175 + "px";
-        bullet.style.top = 165 + "px";
+        bullet.style.top = 190 + "px";
     }
 });
 

@@ -1,124 +1,134 @@
-*{
-  padding: 0;
-  margin: 0;
+* {
+    padding: 0;
+    margin: 0;
 }
 
-body{
-  background: url(https://sm.mashable.com/mashable_in/photo/default/nasa-galaxy_9pu4.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: white;
+body {
+    background: url(https://sm.mashable.com/mashable_in/photo/default/nasa-galaxy_9pu4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
 }
 
-#gameOver{
-  background-color: white;
-  color: red;
-  
+#gameOver {
+    background-color: white;
+    color: red;
 }
 
-#game{
-  width: 500px;
-  height: 200px;
-  border: 1px solid black;
-  background: white;
-}
-  
-#player{
-  width: 20px;
-  height: 50px;
-  background-color: red;
-  position: absolute;
-  top: 150px;
-  border-radius: 25%;
+#game {
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    background: white;
 }
 
-#eyes{
-  width: 20px;
-  height: 10px;
-  background-color: black;
-  position: absolute;
-  border-radius: 25% 25% 0 0;
+#player {
+    width: 20px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    top: 150px;
+    border-radius: 25%;
 }
 
-.animation{
- animation: jump 500ms;
+#eyes {
+    width: 20px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    border-radius: 25% 25% 0 0;
 }
 
-@keyframes jump{
-  0%{top: 150px;}
-  30%{top: 110px;}
-  70%{top: 110px;}
-  100%{top: 150px;}
+.animation {
+    animation: jump 500ms;
 }
 
-#bullet{
-  width: 20px;
-  height: 10px;
-  background-color: black;
-  border-radius: 50%;
-  position: absolute;
-  left: 480px;
-  animation: fly 1s linear infinite;
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+    30% {
+        top: 110px;
+    }
+    70% {
+        top: 110px;
+    }
+    100% {
+        top: 150px;
+    }
 }
 
-#tip{
-  width: 10px;
-  height: 10px;
-  background-color: gold;
-  border-radius: 50%;
-  position: relative;
+#bullet {
+    width: 20px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    left: 480px;
+    top: 190px;
+    animation: fly 1s linear infinite;
 }
 
-
-
-@keyframes fly{
-  0%{left: 480px;}
-  100%{left: -480px;}
+#tip {
+    width: 10px;
+    height: 10px;
+    background-color: gold;
+    border-radius: 50%;
+    position: relative;
 }
 
-#mobile-btns{
-  border: 1px solid black;
-  display: flex;
-  justify-content: space-around;
+@keyframes fly {
+    0% {
+        left: 480px;
+    }
+    100% {
+        left: -480px;
+    }
 }
 
-#jump{
-  height: 75px;
-  width: 75px;
-  background: purple;
-  color: white;
+#mobile-btns {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
 }
 
-#crouch{
-  height: 75px;
-  width: 75px;
-  background: purple;
-  color: white;
+#jump {
+    height: 75px;
+    width: 75px;
+    background: purple;
+    color: white;
 }
 
-#startGame{
-  height: 75px;
-  width: 75px;
-  background: purple;
-  color: white;
+#crouch {
+    height: 75px;
+    width: 75px;
+    background: purple;
+    color: white;
 }
 
-#ctrl{
-  font-size: 4.5rem;
-  letter-spacing: 0.5em;
+#startGame {
+    height: 75px;
+    width: 75px;
+    background: purple;
+    color: white;
 }
 
-#instructions{
-  font-size: 5em;
-  text-align: center;
+#ctrl {
+    font-size: 4.5rem;
+    letter-spacing: 0.5em;
 }
 
-#instructions:hover{
-  font-size: 5.3em;
-  text-decoration: underline;
+#instructions {
+    font-size: 5em;
+    text-align: center;
 }
 
-#link{
-  color: white;
-  text-decoration: none;
+#instructions:hover {
+    font-size: 5.3em;
+    text-decoration: underline;
+}
+
+#link {
+    color: white;
+    text-decoration: none;
 }
