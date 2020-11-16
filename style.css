@@ -107,3 +107,18 @@ body{
   font-size: 4.5rem;
   letter-spacing: 0.5em;
 }
+
+#instructions{
+  font-size: 5em;
+  text-align: center;
+}
+
+#instructions:hover{
+  font-size: 5.3em;
+  text-decoration: underline;
+}
+
+#link{
+  color: white;
+  text-decoration: none;
+}
