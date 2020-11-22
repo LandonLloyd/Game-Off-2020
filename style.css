@@ -3,6 +3,11 @@
   margin: 0;
 }
 
+#whole{
+  height: 100vh;
+  width: 100%;
+}
+
 body{
   background: url(https://sm.mashable.com/mashable_in/photo/default/nasa-galaxy_9pu4.jpg);
   background-size: cover;
