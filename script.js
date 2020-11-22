@@ -68,10 +68,7 @@ if (
 }
 
 function startGame() {
-    //setInterval(function(){
       window.location.reload();
-      //bullet.style.display = "initial";
-    //}, 3000);
 }
 
 mobileJump.addEventListener("click", function () {
@@ -87,7 +84,7 @@ mobileJump.addEventListener("click", function () {
 });
 
 mobileCrouch.addEventListener("click", function () {
-    player.classList != "animation";
+    player.classList.remove("animation");
     player.style.height = 25 + "px";
     player.style.top = 175 + "px";
 });
@@ -107,7 +104,7 @@ document.addEventListener("keydown", (event) => {
     }
 
     if (event.key === "ArrowDown") {
-        player.classList != "animation";
+        player.classList.remove("animation");
         player.style.height = 25 + "px";
         player.style.top = 175 + "px";
         setTimeout(function () {
@@ -144,32 +141,32 @@ let checkDead = setInterval(function () {
         bullet.style.display = "none";
         player.style.animation = "none";
         gameOver.innerText =
-            "You lose! :( You dodged " + Math.floor(score / 100) + " bullets!";
-        if (Math.floor(score / 100) > Number(localStorage.getItem("Score"))) {
+            "You lose! :( You dodged " + Math.floor(score / 128) + " bullets!";
+        if (Math.floor(score / 128) > Number(localStorage.getItem("Score"))) {
             localStorage.setItem(
                 "Name",
                 prompt(
                     "You have the highscore on this machine with a score of " +
-                        Math.floor(score / 100) +
+                        Math.floor(score / 128) +
                         ". Please enter your name so you can be named the All Time Best!"
                 )
             );
-            localStorage.setItem("Score", Math.floor(score / 100));
+            localStorage.setItem("Score", Math.floor(score / 128));
         }
-        if (Math.floor(score / 100) > sessionStorage.getItem("Score")) {
+        if (Math.floor(score / 128) > sessionStorage.getItem("Score")) {
             sessionStorage.setItem(
                 "Name",
                 prompt(
                     "You have the highscore for THIS SESSION of play with a score of " +
-                        Math.floor(score / 100) +
+                        Math.floor(score / 128) +
                         ". Please Enter your name to be given the title - Best This Session!"
                 )
             );
-            sessionStorage.setItem("Score", Math.floor(score / 100));
+            sessionStorage.setItem("Score", Math.floor(score / 128));
         }
     } else if (bullet.style.display != "none") {
         score++;
-        number.innerText = Math.floor(score / 100);
+        number.innerText = Math.floor(score / 128);
     }
 }, 10);
 
