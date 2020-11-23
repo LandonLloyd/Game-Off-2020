@@ -131,10 +131,10 @@ let checkDead = setInterval(function () {
         window.getComputedStyle(bullet).getPropertyValue("top")
     );
     if (
-        bulletLeft < 20 &&
-        bulletLeft > 0 &&
-        playerTop + playerHeight > bulletTop &&
-        playerTop < bulletTop
+        bulletLeft <= 20 &&
+        bulletLeft >= 0 &&
+        playerTop + playerHeight >= bulletTop &&
+        playerTop <= bulletTop
     ) {
         clearInterval(bulletInterval);
         bullet.style.animation = "none";
