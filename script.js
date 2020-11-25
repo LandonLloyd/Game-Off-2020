@@ -44,7 +44,11 @@ let colors = [
     "FireBrick",
 ];
 
-let i = Math.floor(Math.random() * colors.length);
+setInterval(function(){
+  let i = Math.floor(Math.random() * colors.length);
+    bullet.style.backgroundColor = colors[i];
+    player.style.backgroundColor = colors[i];
+}, 500);
 
 let number = document.getElementById("number");
 
@@ -146,9 +150,9 @@ let checkDead = setInterval(function () {
             localStorage.setItem(
                 "Name",
                 prompt(
-                    "You have the highscore on this machine with a score of " +
+                    "You have the HIGHSCORE on this machine with a score of " +
                         Math.floor(score / 256) +
-                        ". Please enter your name so you can be named the All Time Best!"
+                        ". Please enter your name so you can be give the title - All Time Best!"
                 )
             );
             localStorage.setItem("Score", Math.floor(score / 256));
@@ -157,7 +161,7 @@ let checkDead = setInterval(function () {
             sessionStorage.setItem(
                 "Name",
                 prompt(
-                    "You have the highscore for THIS SESSION of play with a score of " +
+                    "You have the highscore on this machine for THIS SESSION of play with a score of " +
                         Math.floor(score / 256) +
                         ". Please Enter your name to be given the title - Best This Session!"
                 )
@@ -190,6 +194,4 @@ function moveBullet() {
 moveBullet();
 const bulletInterval = setInterval(() => moveBullet(), 1280);
 
-bullet.style.backgroundColor = colors[i];
-player.style.backgroundColor = colors[i + 1 || 0];
 gameOver.style.color = colors[i];
