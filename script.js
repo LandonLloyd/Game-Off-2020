@@ -141,34 +141,34 @@ let checkDead = setInterval(function () {
         bullet.style.display = "none";
         player.style.animation = "none";
         gameOver.innerText =
-            "You lose! :( You dodged " + Math.floor(score / 128) + " bullets!";
-        if (Math.floor(score / 128) > Number(localStorage.getItem("Score"))) {
+            "You lose! :( You dodged " + Math.floor(score / 256) + " bullets!";
+        if (Math.floor(score / 256) > Number(localStorage.getItem("Score"))) {
             localStorage.setItem(
                 "Name",
                 prompt(
                     "You have the highscore on this machine with a score of " +
-                        Math.floor(score / 128) +
+                        Math.floor(score / 256) +
                         ". Please enter your name so you can be named the All Time Best!"
                 )
             );
-            localStorage.setItem("Score", Math.floor(score / 128));
+            localStorage.setItem("Score", Math.floor(score / 256));
         }
-        if (Math.floor(score / 128) > sessionStorage.getItem("Score")) {
+        if (Math.floor(score / 256) > sessionStorage.getItem("Score")) {
             sessionStorage.setItem(
                 "Name",
                 prompt(
                     "You have the highscore for THIS SESSION of play with a score of " +
-                        Math.floor(score / 128) +
+                        Math.floor(score / 256) +
                         ". Please Enter your name to be given the title - Best This Session!"
                 )
             );
-            sessionStorage.setItem("Score", Math.floor(score / 128));
+            sessionStorage.setItem("Score", Math.floor(score / 256));
         }
     } else if (bullet.style.display != "none") {
         score++;
-        number.innerText = Math.floor(score / 128);
+        number.innerText = Math.floor(score / 256);
     }
-}, 10);
+}, 5);
 
 board.innerText =
     "All Time Best: " +
