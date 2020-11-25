@@ -44,10 +44,11 @@ let colors = [
     "FireBrick",
 ];
 
-setInterval(function(){
+setInterval(function randColor(){
   let i = Math.floor(Math.random() * colors.length);
     bullet.style.backgroundColor = colors[i];
     player.style.backgroundColor = colors[i];
+    gameOver.style.color = colors[i];
 }, 500);
 
 let number = document.getElementById("number");
@@ -194,4 +195,3 @@ function moveBullet() {
 moveBullet();
 const bulletInterval = setInterval(() => moveBullet(), 1280);
 
-gameOver.style.color = colors[i];
