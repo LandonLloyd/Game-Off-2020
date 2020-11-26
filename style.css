@@ -80,12 +80,9 @@ body{
   0%{left: 100%;}
   100%{left: -100%;}
 }
-
-#mobile-btns{
-  border: 1px solid black;
-  display: flex;
-  justify-content: space-around;
-}
+ #mobile-btns{
+   display: flex;
+ }
 
 #jump{
   height: 75px;
@@ -110,7 +107,6 @@ body{
 
 #ctrl{
   font-size: 4.5rem;
-  letter-spacing: 0.5em;
 }
 
 #instructions{
