@@ -2,7 +2,7 @@
 My attempt at the Game Off 2020 game jam hosted by GitHub and Lee Reilly. All my code for the jam will be hosted here!
 
 # Live Version
-[View the Live Game Here! It is still in BETA version and will be updated frequently!](https://landonlloyd.github.io/Game-Off-2020/)
+[View the Live Game Here! It is finished and probably won't recieve any new updates.](https://landonlloyd.github.io/Game-Off-2020/)[You can also view the page on itch.io it is the same game just on a different page.](https://landonlloyd2.itch.io/moonshot)
 
 # [Instructions](https://landonlloyd.github.io/Game-Off-2020/Instructions/index.html)
 The instructions for the game are quite simple: Don't get hit by the bullet that comes your way. You are acting as the randomly colored character on the left of the screen and you have to jump over the bullet using the UP arrow or the Spacebar to do so. You can also crouch under bullets using the DOWN arrow.
